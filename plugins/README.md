@@ -2,4 +2,11 @@
 
 Supported reverse proxies :
 
-- [Traefik](https://traefik.io/traefik/)
+- [Traefik](./traefik/README.md)
+
+### Next desired reverse proxies :
+
+- proxy-wasm
+- Nginx with X plugin
+- Caddy
+

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  traefik:
+    image: traefik:latest
+    command:
+      - --entryPoints.http.address=:80
+      - --providers.docker=true
+      - --experimental.localPlugins.wolonreq.moduleName=github.com/dominique57/wolonreq
+    ports:
+      - "8080:80"
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - './dynamic-config.yml:/etc/traefik/dynamic-config.yml'
+      - '../../..:/plugins-local/src/github.com/dominique57/wolonreq'
+
+  whoami:
+    image: "traefik/whoami"
+    restart: unless-stopped
+    container_name: "whoami"
+    ports:
+      - "8081:80"
