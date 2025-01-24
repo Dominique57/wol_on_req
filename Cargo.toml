@@ -4,3 +4,11 @@ version = "0.0.1"
 edition = "2021"
 
 [dependencies]
+serde = { version = "1.0.217", features = ["derive"] }
+tokio = { version = "1.43.0", features = ["rt", "rt-multi-thread", "macros"] }
+clap = { version = "4.5.26", features = ["derive"] }
+serde_json = "1.0.136"
+axum = "0.8.1"
+simple_logger = "5.0.0"
+log = "0.4.25"
+macaddr = { "version" = "1.0.1", features = ["std", "serde_std"] }

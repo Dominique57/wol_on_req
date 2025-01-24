@@ -1,0 +1,14 @@
+{
+  "names": [
+    {
+      "name": "Name1",
+      "mac_address": "ab:test",
+      "ip_address": "192.168.1.98"
+    },
+    {
+      "name": "Name1",
+      "mac_address": "bc:test",
+      "ip_address": "192.168.1.99"
+    }
+  ]
+}
