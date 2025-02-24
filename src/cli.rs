@@ -1,3 +1,4 @@
+use crate::ext;
 use clap::Parser;
 use serde::{Deserialize, Serialize};
 
@@ -9,7 +10,7 @@ pub struct Config {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Name {
     pub name: String,
-    pub mac_address: macaddr::MacAddr,
+    pub mac_address: ext::serde::MacAddrSerde,
     pub ip_address: std::net::Ipv4Addr,
 }
 
