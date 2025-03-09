@@ -12,3 +12,8 @@ axum = "0.8.1"
 simple_logger = "5.0.0"
 log = "0.4.25"
 macaddr = { "version" = "1.0.1", features = ["std", "serde_std"] }
+chrono = "0.4.40"
+rand = "0.9.0"
+surge-ping = "0.8.2"
+anyhow = "1.0.97"
+itertools = "0.14.0"
